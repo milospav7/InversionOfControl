@@ -1,0 +1,1 @@
+Dependency Injection container for IoC built from scratch. Test driven, cover with NUnit tests.
