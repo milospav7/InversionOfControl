@@ -12,7 +12,11 @@ namespace IoC
         public void Register<TIn, TOut>()
         {
             _resolvedTypes.Add(typeof(TIn), () => GetInstance(typeof(TOut)));
+        }
 
+        public void RegisterSingleton<T>(T obj)
+        {
+            _resolvedTypes.Add(typeof(T), () => obj));
         }
 
         public T GetInstance<T>()

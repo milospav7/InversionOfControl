@@ -86,16 +86,21 @@ namespace Tests
 
     }
 
-
     [TestFixture]
     public class Container_Register : ContainerTestBase
     {
         [Test]
         public void RegisterFromInterface()
         {
-            Container.Register<ICar, AudiA5>(); // DI part
+            Container.Register<ICar, AudiA5>(); // register service for interface
             var subject = Container.GetInstance<ICar>(); // then require interface
-            subject.Should().BeOfType<AudiA5>(); // check if DI done successfuly
+            subject.Should().BeOfType<AudiA5>(); // check if interface is resolved 
+        }
+
+        [Test]
+        public void CreateInstanceWithDependencies()
+        {
+            
         }
 
         interface ICar
@@ -117,6 +122,21 @@ namespace Tests
         {
             public string EngineType => "Electric";
         }
+    }
+
+    [TestFixture]
+    public class Container_RegisterSingletone : ContainerTestBase
+    {
+        [Test]
+        public void ReturnedSingleInstance()
+        {
+            var airplane = new Airplane();
+            Container.RegisterSingleton(airplane);
+            var subject = Container.GetInstance(typeof(Airplane));
+            subject.Should().Be(airplane);
+        }
+
+        class Airplane { }
     }
 
 }
