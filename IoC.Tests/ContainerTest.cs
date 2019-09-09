@@ -25,15 +25,38 @@ namespace Tests
     [TestFixture]
     public class Container_GetInstance : ContainerTestBase
     {
-        public void CreateInstanceWithParams()
+        [Test]
+        public void CreateInstanceWithNoParams()
         {
             var subject = (A)Container.GetInstance(typeof(A));
             subject.Should().BeOfType<A>();
         }
 
+        [Test]
+        public void CreateInstanceWithParams()
+        {
+            var subject = (B)Container.GetInstance(typeof(B));
+            subject.A.Should().BeOfType<A>();
+        }
+
         class A
         {
 
+        }
+
+        class B
+        {
+            public A A { get; }
+
+            public B()
+            {
+
+            }
+
+            public B(A a)
+            {
+                A = a;
+            }
         }
 
     }

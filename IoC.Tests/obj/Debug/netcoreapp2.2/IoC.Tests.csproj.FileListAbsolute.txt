@@ -12,3 +12,6 @@ C:\Projekti\Razno\IoC\IoC\IoC.Tests\bin\Debug\netcoreapp2.2\IoC.Tests.runtimecon
 C:\Projekti\Razno\IoC\IoC\IoC.Tests\bin\Debug\netcoreapp2.2\IoC.Tests.dll
 C:\Projekti\Razno\IoC\IoC\IoC.Tests\bin\Debug\netcoreapp2.2\IoC.pdb
 C:\Projekti\Razno\IoC\IoC\IoC.Tests\obj\Debug\netcoreapp2.2\IoC.Tests.csproj.CopyComplete
+C:\Projekti\Razno\IoC\IoC\IoC.Tests\bin\Debug\netcoreapp2.2\IoC.Tests.pdb
+C:\Projekti\Razno\IoC\IoC\IoC.Tests\obj\Debug\netcoreapp2.2\IoC.Tests.dll
+C:\Projekti\Razno\IoC\IoC\IoC.Tests\obj\Debug\netcoreapp2.2\IoC.Tests.pdb
