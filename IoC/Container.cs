@@ -18,5 +18,10 @@ namespace IoC
             return Activator.CreateInstance(type, args);
         }
 
+        public T GetInstance<T>()
+        {
+            return (T)GetInstance(typeof(T));
+        }
+
     }
 }

@@ -39,6 +39,21 @@ namespace Tests
             subject.A.Should().BeOfType<A>();
         }
 
+        [Test]
+        public void ParameterlessConstructorAllowe()
+        {
+            var subject = (C)Container.GetInstance(typeof(C));
+            subject.Invoked.Should().BeTrue();
+        }
+
+        [Test]
+        public void GenericInstanceAllowed()
+        {
+            var subject = Container.GetInstance<A>();
+            subject.Should().BeOfType<A>();
+        }
+
+
         class A
         {
 
@@ -56,6 +71,16 @@ namespace Tests
             public B(A a)
             {
                 A = a;
+            }
+        }
+
+        class C
+        {
+            public bool? Invoked { get; set; }
+
+            public C()
+            {
+                Invoked = true;
             }
         }
 
