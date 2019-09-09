@@ -3,3 +3,12 @@ C:\Projekti\Razno\IoC\IoC\IoC.Tests\obj\Debug\netcoreapp2.2\IoC.Tests.csprojAsse
 C:\Projekti\Razno\IoC\IoC\IoC.Tests\obj\Debug\netcoreapp2.2\IoC.Tests.csproj.CoreCompileInputs.cache
 C:\Projekti\Razno\IoC\IoC\IoC.Tests\obj\Debug\netcoreapp2.2\IoC.Tests.AssemblyInfoInputs.cache
 C:\Projekti\Razno\IoC\IoC\IoC.Tests\obj\Debug\netcoreapp2.2\IoC.Tests.AssemblyInfo.cs
+C:\Projekti\Razno\IoC\IoC\IoC.Tests\bin\Debug\netcoreapp2.2\NUnit3.TestAdapter.dll
+C:\Projekti\Razno\IoC\IoC\IoC.Tests\bin\Debug\netcoreapp2.2\NUnit3.TestAdapter.pdb
+C:\Projekti\Razno\IoC\IoC\IoC.Tests\bin\Debug\netcoreapp2.2\nunit.engine.netstandard.dll
+C:\Projekti\Razno\IoC\IoC\IoC.Tests\bin\Debug\netcoreapp2.2\IoC.Tests.deps.json
+C:\Projekti\Razno\IoC\IoC\IoC.Tests\bin\Debug\netcoreapp2.2\IoC.Tests.runtimeconfig.json
+C:\Projekti\Razno\IoC\IoC\IoC.Tests\bin\Debug\netcoreapp2.2\IoC.Tests.runtimeconfig.dev.json
+C:\Projekti\Razno\IoC\IoC\IoC.Tests\bin\Debug\netcoreapp2.2\IoC.Tests.dll
+C:\Projekti\Razno\IoC\IoC\IoC.Tests\bin\Debug\netcoreapp2.2\IoC.pdb
+C:\Projekti\Razno\IoC\IoC\IoC.Tests\obj\Debug\netcoreapp2.2\IoC.Tests.csproj.CopyComplete

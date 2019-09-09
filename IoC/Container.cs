@@ -6,7 +6,7 @@ namespace IoC
     {
         public object GetInstance(Type type)
         {
-            return null;
+            return Activator.CreateInstance(type);
         }
 
     }

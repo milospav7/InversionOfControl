@@ -1,18 +1,41 @@
+using FluentAssertions;
+using IoC;
 using NUnit.Framework;
 
 namespace Tests
 {
-    public class Tests
+    public class ContainerTestBase
     {
+
+        protected Container Container;
+
         [SetUp]
-        public void Setup()
+        public void BeforeEach()
         {
+            Container = new Container();
         }
 
-        [Test]
-        public void Test1()
+        [TearDown]
+        public void AfterEach()
         {
-            Assert.Pass();
+            Container = null;
         }
     }
+
+    [TestFixture]
+    public class Container_GetInstance : ContainerTestBase
+    {
+        public void CreateInstanceWithParams()
+        {
+            var subject = (A)Container.GetInstance(typeof(A));
+            subject.Should().BeOfType<A>();
+        }
+
+        class A
+        {
+
+        }
+
+    }
+
 }
