@@ -86,4 +86,37 @@ namespace Tests
 
     }
 
+
+    [TestFixture]
+    public class Container_Register : ContainerTestBase
+    {
+        [Test]
+        public void RegisterFromInterface()
+        {
+            Container.Register<ICar, AudiA5>(); // DI part
+            var subject = Container.GetInstance<ICar>(); // then require interface
+            subject.Should().BeOfType<AudiA5>(); // check if DI done successfuly
+        }
+
+        interface ICar
+        {
+            string EngineType { get; }
+        }
+
+        class AudiA6 : ICar
+        {
+            public string EngineType => "Diesel";
+        }
+
+        class AudiA5 : ICar
+        {
+            public string EngineType => "Petrol";
+        }
+
+        class TeslaP90d : ICar
+        {
+            public string EngineType => "Electric";
+        }
+    }
+
 }
