@@ -132,7 +132,7 @@ namespace Tests
         {
             var airplane = new Airplane();
             Container.RegisterSingleton(airplane);
-            var subject = Container.GetInstance(typeof(Airplane));
+            var subject = Container.GetInstance<Airplane>();
             subject.Should().Be(airplane);
         }
 

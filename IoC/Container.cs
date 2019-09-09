@@ -16,7 +16,7 @@ namespace IoC
 
         public void RegisterSingleton<T>(T obj)
         {
-            _resolvedTypes.Add(typeof(T), () => obj));
+            _resolvedTypes.Add(typeof(T), () => obj);
         }
 
         public T GetInstance<T>()
