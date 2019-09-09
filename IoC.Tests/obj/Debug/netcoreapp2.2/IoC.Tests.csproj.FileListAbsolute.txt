@@ -1,0 +1,5 @@
+C:\Projekti\Razno\IoC\IoC\IoC.Tests\bin\Debug\netcoreapp2.2\IoC.dll
+C:\Projekti\Razno\IoC\IoC\IoC.Tests\obj\Debug\netcoreapp2.2\IoC.Tests.csprojAssemblyReference.cache
+C:\Projekti\Razno\IoC\IoC\IoC.Tests\obj\Debug\netcoreapp2.2\IoC.Tests.csproj.CoreCompileInputs.cache
+C:\Projekti\Razno\IoC\IoC\IoC.Tests\obj\Debug\netcoreapp2.2\IoC.Tests.AssemblyInfoInputs.cache
+C:\Projekti\Razno\IoC\IoC\IoC.Tests\obj\Debug\netcoreapp2.2\IoC.Tests.AssemblyInfo.cs
